@@ -1,0 +1,33 @@
+%practise creating table with welfare result
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with \usepackage{amssymb}
+\usepackage{amsmath}
+\renewcommand{\arraystretch}{1.5} %addddddddddddddddddd!!!!
+\title{Practise Table}
+\author{Xiaochen}
+%\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+\begin{table}[h]
+\begin{tabular}[h]{|c|c|c|c|}
+\hline 
+L &  $\Delta$ Profit  & $\Delta$ CS & $\Delta$ Total Welfare \\
+\hline \hline
+L=0: No RS & 0 & 0&0\\
+\hline
+$0<L\leq \frac{1}{r_0} $: Low L & $\frac{1}{2} tr_0^2L$ & $\frac{1}{4}tr_0^2L$&$\frac{3}{4}tr_0^2L$\\
+\hline
+$L \geq \frac{1}{r_0}$: high L & $t(r_0 -\frac{1}{2L})$ & $\frac{t}{4L}$&$t(r_0 - \frac{1}{4L})$ \\
+\hline
+$L\to +\infty$: perfect personalization&$tr_0=s$&0&$tr_0=s$\\
+\hline
+\end{tabular}
+\caption{Summary of welfare result: how increase in profit, cs and total welfare changes with the level of personalization L}
+\label{tab:comp3welfare}
+\end{table}
+\end{document}
